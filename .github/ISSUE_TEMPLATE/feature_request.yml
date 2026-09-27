@@ -1,0 +1,24 @@
+name: Feature request
+description: An idea for something MuscleMap should do
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Tell me what you want and why. Concrete use cases get built faster than vague wishes.
+  - type: textarea
+    id: the-idea
+    attributes:
+      label: What do you want?
+      description: Describe the feature in a sentence or two.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you need it?
+      description: What are you doing today that this would make easier?
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra details
+      description: Mockups, references from other apps, anything that helps.

@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in MuscleMap is broken or does not work the way it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report this. Fill in what you can and skip the rest.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect to see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you tap or do right before it happened?
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See error
+  - type: dropdown
+    id: version
+    attributes:
+      label: App version
+      options:
+        - v1.0.0
+        - Other (mention in the description)
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 7, Android 14
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots or a CSV export attached here help a lot.
